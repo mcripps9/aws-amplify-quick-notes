@@ -109,6 +109,7 @@ Resources:
   # Created to allow the UserPool SMS Config to publish via the Simple Notification Service during MFA Process
     Type: AWS::IAM::Role
     Properties:
+      PermissionsBoundary: !Sub 'arn:aws:iam::${AWS::AccountId}:policy/ets-ito-policy-permissionboundary'
       RoleName: !If [ShouldNotCreateEnvResources, 'ets-aws-quickn9506fafe_sns-role', !Join ['',['ets-aws-quickn9506fafe_sns-role', '-', !Ref env]]]
       AssumeRolePolicyDocument: 
         Version: "2012-10-17"
