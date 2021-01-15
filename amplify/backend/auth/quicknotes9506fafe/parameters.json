@@ -28,7 +28,7 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "quickn9506fafe_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "ets-aws-quickn9506fafe_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
     "resourceName": "quicknotes9506fafe",
     "authSelections": "identityPoolAndUserPool",
